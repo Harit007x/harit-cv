@@ -17,15 +17,15 @@ interface BadgeListProps {
  * Renders a list of badges for work experience
  * Handles both mobile and desktop layouts through className prop
  */
-function BadgeList({
-  className,
-  badges,
-}: BadgeListProps) {
+function BadgeList({ className, badges }: BadgeListProps) {
   if (badges.length === 0) return null;
 
   return (
     <ul
-      className={cn("inline-flex list-none gap-x-1 p-0", className)}
+      className={cn(
+        "inline-flex flex-wrap min-w-[350px] list-none gap-x-1 p-0",
+        className
+      )}
       aria-label="Technologies used"
     >
       {badges.map((badge) => (
@@ -50,13 +50,10 @@ interface WorkPeriodProps {
 /**
  * Displays the work period in a consistent format
  */
-function WorkPeriod({
-  start,
-  end,
-}: WorkPeriodProps) {
+function WorkPeriod({ start, end }: WorkPeriodProps) {
   return (
     <div
-      className="text-sm tabular-nums text-gray-500"
+      className="text-sm tabular-nums text-gray-500 whitespace-nowrap"
       title={`Employment period: ${start} to ${end ?? "Present"}`}
     >
       {start} - {end ?? "Present"}
@@ -72,10 +69,7 @@ interface CompanyLinkProps {
 /**
  * Renders company name with optional link
  */
-function CompanyLink({
-  company,
-  link,
-}: CompanyLinkProps) {
+function CompanyLink({ company, link }: CompanyLinkProps) {
   return (
     <a
       className="hover:underline"
@@ -97,19 +91,17 @@ interface WorkExperienceItemProps {
  * Individual work experience card component
  * Handles responsive layout for badges (mobile/desktop)
  */
-function WorkExperienceItem({
-  work,
-}: WorkExperienceItemProps) {
+function WorkExperienceItem({ work }: WorkExperienceItemProps) {
   const { company, link, badges, title, start, end, description } = work;
 
   return (
     <Card className="py-1 print:py-0">
       <CardHeader className="print:space-y-1">
         <div className="flex items-center justify-between gap-x-2 text-base">
-          <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none print:text-sm">
+          <h3 className="inline-flex flex-col items-start justify-center gap-y-2 font-semibold leading-none print:text-sm">
             <CompanyLink company={company} link={link} />
             <BadgeList
-              className="hidden gap-x-1 sm:inline-flex"
+              className="hidden sm:inline-flex gap-y-2"
               badges={badges}
             />
           </h3>
@@ -144,9 +136,7 @@ interface WorkExperienceProps {
  * Main work experience section component
  * Renders a list of work experiences in chronological order
  */
-export function WorkExperience({
-  work,
-}: WorkExperienceProps) {
+export function WorkExperience({ work }: WorkExperienceProps) {
   return (
     <Section>
       <h2 className="text-xl font-bold" id="work-experience">

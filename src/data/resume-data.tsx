@@ -1,19 +1,21 @@
 import type { ResumeData } from "@/lib/types";
 
 export const RESUME_DATA: ResumeData = {
-  name: "Bartosz Jarocki",
-  initials: "BJ",
-  location: "Wrocław, Poland, CET",
-  locationLink: "https://www.google.com/maps/place/Wrocław",
+  name: "Harit Patel",
+  initials: "HP",
+  location: "Ahmedabad, India",
+  locationLink: "",
   about: "Full Stack Engineer dedicated to building high-quality products.",
   summary: (
     <>
       Full Stack Engineer specializing in high-performance React applications,
       scalable Node.js services, and real-time collaboration systems.
-      Experienced in technical architecture design and remote team leadership.
+      Experienced in technical web/mobile development and user centric design
+      (UI/UX).
     </>
   ),
-  avatarUrl: "https://avatars.githubusercontent.com/u/1017620?v=4",
+  avatarUrl:
+    "https://lh3.googleusercontent.com/a/ACg8ocIFyvkXuIEcPrjy04cazaOjWyqi6WiUKsBGYWyj-LF8cmwZ0fYX=s360-c-no",
   personalWebsiteUrl: "https://jarocki.me",
   contact: {
     email: "bartosz.jarocki@hey.com",
@@ -21,177 +23,155 @@ export const RESUME_DATA: ResumeData = {
     social: [
       {
         name: "GitHub",
-        url: "https://github.com/BartoszJarocki",
+        url: "https://github.com/Harit007x",
         icon: "github",
       },
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/bjarocki/",
+        url: "https://www.linkedin.com/in/harit-patel-a7a1a5208/",
         icon: "linkedin",
       },
       {
         name: "X",
-        url: "https://x.com/BartoszJarocki",
+        url: "https://x.com/harit_ptl",
         icon: "x",
       },
     ],
   },
   education: [
     {
-      school: "Wrocław University of Technology",
-      degree: "Bachelor's Degree in Control systems engineering and Robotics",
-      start: "2007",
-      end: "2010",
+      school: "Indus University",
+      degree: "Bachelor's Degree in Computer Applicatons",
+      start: "2017",
+      end: "2020",
+    },
+    {
+      school: "Indus University",
+      degree: "Master's Degree in Computer Applicatons",
+      start: "2020",
+      end: "2022",
     },
   ],
   work: [
     {
-      company: "Motion",
-      link: "https://motionapp.com/",
-      badges: ["Remote", "AI", "React", "Next.js", "TypeScript", "AdonisJS"],
-      title: "Senior Software Engineer",
+      company: "Excellent Webworld",
+      link: "https://www.excellentwebworld.com/",
+      badges: [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "Node.js/Express.js",
+        "Mongo DB",
+        "Headless UI",
+        "Figma",
+      ],
+      title: "Mern Stack Developer",
       start: "2025",
-      end: null,
-      description: (
-        <>
-          Working on internal AI agents platform allowing marketing specialists
-          to create AI workflows.
-        </>
-      ),
-    },
-    {
-      company: "Film.io",
-      link: "https://film.io",
-      badges: ["Remote", "React", "Next.js", "TypeScript", "Node.js"],
-      title: "Software Architect",
-      start: "2024",
       end: "2025",
       description: (
         <>
-          Leading technical architecture of a blockchain-based film funding
-          platform.
+          Building a production-ready promotional raffle platform inspired by
+          Dream Dubai.{" "}
           <ul className="list-inside list-disc">
             <li>
-              Architecting migration from CRA to Next.js for improved
-              performance, SEO, and DX
+              Enabling users to purchase digital shopping cards/products with
+              automatic draw ticket generation.
             </li>
             <li>
-              Established release process enabling faster deployments and
-              reliable rollbacks
+              Developed user features including ticket history, campaign
+              browsing, and participation in scheduled prize draws.
             </li>
             <li>
-              Implementing system-wide monitoring and security improvements
+              Implemented a full admin CMS for campaign configuration,
+              participant validation, draw execution, and winner publication.
+            </li>
+            <li>
+              Designing and optimizing REST APIs with scalable,
+              microservice-ready architecture.
+            </li>
+            <li>
+              Creating a fully responsive React + Tailwind UI with smooth user
+              flows and clean component structure.
+            </li>
+            <li>
+              Implemented multi-campaign support, allowing simultaneous raffles
+              with distinct rules and prize pools.
             </li>
           </ul>
         </>
       ),
     },
     {
-      company: "Parabol",
-      link: "https://parabol.co",
+      company: "Ek Software",
+      link: "http://www.eksoftware.in/",
       badges: [
-        "Remote",
+        "Web Development",
         "React",
+        "Next.js",
         "TypeScript",
-        "Node.js",
-        "GraphQL",
-        "Tailwind CSS",
+        "Node js",
+        "Postgresql",
+        "Web-Sockets",
+        "Python",
+        "Rest Apis",
       ],
-      title: "Senior Full Stack Developer",
-      start: "2021",
-      end: "2024",
+      title: "Fullstack Developer",
+      start: "2022",
+      end: "2022",
       description: (
         <>
-          Senior developer and squad leader for an enterprise agile meeting
-          platform.
+          Led frontend redevelopment for a healthcare project (OPTML)
           <ul className="list-inside list-disc">
             <li>
-              Built design system with Tailwind CSS, improving development speed
-              and time to market
+              Revamped the frontend tech stack by migrating from React CRM to
+              React Vite, replacing Material-UI with ShadCN UI + Tailwind, and
+              adopting pnpm/Turborepo—improving development speed by 40%.
             </li>
             <li>
-              Implemented engineering practices: PR automation, code review
-              guidelines, and workflows
+              Upgraded 90% of project libraries, increasing development server
+              speed by 15%, while implementing JWT-based authentication and
+              optimizing REST API performance.
             </li>
             <li>
-              Open source contributions to Relay DevTools and React i18n tooling
+              Improved team productivity and code quality by standardizing
+              practices, leading code reviews (reducing bugs by 25%), — cutting
+              onboarding time by 50%.
+            </li>
+            <li>
+              Built a standalone WebSocket server for real-time updates and
+              implemented pub/sub architecture for scalable future growth, while
+              designing UX-focused interfaces that accelerated feature approval
+              by 15%.
+            </li>
+            <li>
+              Worked closely with product teams to translate UX/UI requirements
+              into functional interfaces, ensuring timely and high-quality
+              feature releases.
+            </li>
+            <li>
+              Improved UI/UX, and achieved 100% responsiveness through migration
+              from Bootstrap/SCSS to Tailwind CSS.
             </li>
           </ul>
         </>
       ),
-    },
-    {
-      company: "Clevertech",
-      link: "https://clevertech.biz",
-      badges: ["Remote", "React", "TypeScript", "Node.js", "Android", "Kotlin"],
-      title: "Lead Android Developer → Full Stack Developer",
-      start: "2015",
-      end: "2021",
-      description: (
-        <>
-          Successfully transitioned from mobile to full-stack development while
-          leading distributed teams.
-          <ul className="list-inside list-disc">
-            <li>
-              Led frontend team at Evercast, building real-time platform
-              supporting 30+ users per room with HD streaming and collaboration
-              tools
-            </li>
-            <li>
-              Developed offline-first Android app for DKMS, improving donor
-              registration process
-            </li>
-            <li>
-              Led development teams across multiple successful client projects
-            </li>
-          </ul>
-        </>
-      ),
-    },
-    {
-      company: "Jojo Mobile",
-      link: "https://bsgroup.eu/",
-      badges: ["On Site", "Android", "Java", "Kotlin"],
-      title: "Android Developer → Lead Android Developer",
-      start: "2012",
-      end: "2015",
-      description: (
-        <>
-          First Android developer, grew and led a team of 15+ engineers while
-          establishing engineering culture.
-          <ul className="list-inside list-disc">
-            <li>
-              Developed apps for major Polish companies including LOT, Polskie
-              Radio, and Agora
-            </li>
-            <li>Built and mentored high-performing mobile development team</li>
-          </ul>
-        </>
-      ),
-    },
-    {
-      company: "Nokia Siemens Networks",
-      link: "https://www.nokia.com",
-      badges: ["On Site", "C/C++", "LTE", "Agile"],
-      title: "C/C++ Developer",
-      start: "2010",
-      end: "2012",
-      description:
-        "Developed software for LTE base stations at enterprise scale, gaining strong fundamentals in software architecture, testing practices, and cross-team collaboration.",
     },
   ],
   skills: [
-    "React/Next.js/Remix",
+    "React/Next.js",
     "TypeScript",
+    "Node.js/Express.js",
+    "Python",
+    "Rest APIs",
+    "GraphQL",
+    "WebSockets",
+    "WebRTC",
+    "Postgresql",
+    "MongoDb",
     "Tailwind CSS",
     "Design Systems",
-    "WebRTC",
-    "WebSockets",
-    "Node.js",
-    "GraphQL",
-    "Relay",
-    "System Architecture",
-    "Remote Team Leadership",
+    "Figma",
+    "UI/UX",
   ],
   projects: [
     {
